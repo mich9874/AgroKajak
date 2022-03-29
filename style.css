@@ -1,0 +1,211 @@
+body,html {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Gill Sans, sans-serif;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+    padding: 20px 0;
+    z-index: 1;
+}
+#logo {
+    width: 250px;
+}
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header #container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bar ul li {
+    float: left;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: Gill Sans, sans-serif;
+}
+
+.bar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.bar ul li a.active, .bar ul li a:hover {
+    background: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(1.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+#banner a {
+    text-decoration: none;
+    color:white;
+}
+#check {
+    display: flex;
+    justify-content: center;
+}    
+
+#logoo {
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+#check button {
+    height: 65px;
+    width: 250px;
+    padding: 15px;
+    background-color: red;
+    border-radius: 20px;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.text {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.text h1 {
+    font-size: 45px;
+}
+
+.contact-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 160px;
+    background-color: #444;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.icon{
+    font-size: 32px;
+    color: red;
+    transition: .3s linear;
+}
+
+.card:hover .icon{
+    transform: scale(4);
+    opacity: 0;
+}
+
+.card-content h3,
+.card-content span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+}
+
+.card-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color: #ea8685;
+}
+
+.card-content span{
+    bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card:hover h3{
+    opacity: 1;
+    top: 46px;
+    transition: .3s linear .3s;
+}
+
+.card:hover span{
+    opacity: 1;
+    bottom: 46px;
+    transition: .3s linear .3s;
+}
+
+
+@media screen and (max-width:900px){
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}
+
+#dojazd {
+    margin-bottom: 10px;
+}
+
+table {
+    border:1px solid #000000;
+    padding:5px;
+}
+table th {
+    border:1px solid #ffffff;
+    padding:5px;
+    background: #000000;
+    color: #ffffff;
+}
+table td {
+    border:1px solid #ffffff;
+    text-align:center;
+    padding:5px;
+    background: #4b4b4b;
+    color: #ffffff;
+}
+
+#regulamin {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 17px;
+}
+#regulamin h1 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-size: 66px;
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: white;
+    text-align: right;
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+}
